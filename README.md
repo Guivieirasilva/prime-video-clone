@@ -1,2 +1,4 @@
-# prime-video-clone
- Clone da Amazon Prime Video
+<h1>Clone Amazon Prime Video</h1>
+ <p> Clone da Amazon Prime Video feito com HTML, CSS e Javascript. </p>
+ <li>Projeto foi realizado todo em JS sem a utilização de frameworks </li>
+ <li>Foi utilizado a API do the movie db</li>

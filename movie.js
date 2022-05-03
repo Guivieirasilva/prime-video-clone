@@ -1,5 +1,5 @@
 //API
-const API_KEY = 'api_key=5a21c7e33fd419b270df295a1b95435d&page=1';
+const API_KEY = 'api_key=5a21c7e33fd419b270df295a1b95435d';
 const BASE_URL  = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&'+API_KEY;
 
@@ -15,7 +15,7 @@ fetch(API_URL)
         if(j == 0){
             main.innerHTML+=`
             
-                <div class="banner-principal" style="background-image:url('https://image.tmdb.org/t/p/original`+i.backdrop_path+`')"</div>
+             <div class="banner-principal" style="background-image:url('https://image.tmdb.org/t/p/original`+i.backdrop_path+`')"</div>
             
             `
         }else{
@@ -31,7 +31,8 @@ fetch(API_URL)
             }
         }
     })
-})
+});
+
 fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=5a21c7e33fd419b270df295a1b95435d&page=2')
 .then(response=> response.json())
 .then(data=> {
@@ -41,7 +42,6 @@ fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_k
             return
         if(j == 0){
             main.innerHTML+=`
-              
   
             `
         }else{
